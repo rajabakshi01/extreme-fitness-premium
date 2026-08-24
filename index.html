@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Extreme Fitness Premium — premium training, strength, conditioning and fitness memberships." />
+  <title>Extreme Fitness Premium</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#home">
+      <img src="logo.jpg" alt="Extreme Fitness Premium logo" />
+      <span>XTREME FITNESS <small>PREMIUM</small></span>
+    </a>
+
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#programs">Programs</a>
+      <a href="#membership">Membership</a>
+      <a href="#contact" class="nav-cta">Join Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">PREMIUM FITNESS • PREMIUM RESULTS</p>
+        <h1>BUILD YOUR<br><span>XTREME</span></h1>
+        <p class="hero-text">Train harder. Get stronger. Become the best version of yourself in a premium fitness environment.</p>
+        <div class="hero-buttons">
+          <a href="#membership" class="btn primary">View Memberships</a>
+          <a href="#contact" class="btn ghost">Book a Visit</a>
+        </div>
+      </div>
+      <div class="hero-badge">
+        <strong>24/7</strong>
+        <span>STRONG MIND<br>STRONG BODY</span>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div>
+        <p class="eyebrow">WHY XTREME</p>
+        <h2>More than a gym.<br><span>A stronger lifestyle.</span></h2>
+      </div>
+      <div class="about-copy">
+        <p>Extreme Fitness Premium is built for people who are serious about strength, fitness and transformation.</p>
+        <div class="stats">
+          <div><b>01</b><span>Premium Equipment</span></div>
+          <div><b>02</b><span>Expert Guidance</span></div>
+          <div><b>03</b><span>Powerful Community</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" class="section dark-section">
+      <div class="section-heading">
+        <p class="eyebrow">TRAINING</p>
+        <h2>Choose your <span>challenge.</span></h2>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card-number">01</div>
+          <h3>Strength</h3>
+          <p>Build raw strength with structured resistance training and progressive overload.</p>
+        </article>
+        <article class="card">
+          <div class="card-number">02</div>
+          <h3>Muscle Building</h3>
+          <p>Focused hypertrophy workouts designed to help you add quality muscle.</p>
+        </article>
+        <article class="card">
+          <div class="card-number">03</div>
+          <h3>Fat Loss</h3>
+          <p>Combine smart training and conditioning to improve fitness and body composition.</p>
+        </article>
+        <article class="card">
+          <div class="card-number">04</div>
+          <h3>Personal Training</h3>
+          <p>One-to-one coaching with a plan built around your goals and experience.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="membership" class="section membership">
+      <div class="section-heading center">
+        <p class="eyebrow">MEMBERSHIP</p>
+        <h2>Pick your <span>level.</span></h2>
+        <p>Replace these sample plans with your actual gym pricing.</p>
+      </div>
+      <div class="plans">
+        <article class="plan">
+          <h3>STARTER</h3>
+          <div class="price">₹1,499 <small>/ month</small></div>
+          <ul><li>Gym access</li><li>Basic workout guidance</li><li>Locker access</li></ul>
+          <a href="#contact" class="btn ghost full">Enquire</a>
+        </article>
+        <article class="plan featured">
+          <div class="popular">MOST POPULAR</div>
+          <h3>PREMIUM</h3>
+          <div class="price">₹2,499 <small>/ month</small></div>
+          <ul><li>Full gym access</li><li>Trainer guidance</li><li>Fitness assessment</li><li>Premium facilities</li></ul>
+          <a href="#contact" class="btn primary full">Join Premium</a>
+        </article>
+        <article class="plan">
+          <h3>ELITE</h3>
+          <div class="price">₹3,999 <small>/ month</small></div>
+          <ul><li>Everything in Premium</li><li>Personal training</li><li>Custom workout plan</li><li>Priority support</li></ul>
+          <a href="#contact" class="btn ghost full">Enquire</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div>
+        <p class="eyebrow">YOUR NEXT REP STARTS HERE</p>
+        <h2>Ready to get <span>XTREME?</span></h2>
+      </div>
+      <a href="#contact" class="btn primary">Start Today</a>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div>
+        <p class="eyebrow">CONTACT</p>
+        <h2>Come train<br><span>with us.</span></h2>
+        <p class="contact-note">Add your real address, phone number and opening hours here.</p>
+        <div class="contact-info">
+          <p><b>📍 Address:</b> Your Gym Address, Your City</p>
+          <p><b>📞 Phone:</b> +91 XXXXX XXXXX</p>
+          <p><b>⏰ Hours:</b> 6:00 AM – 10:00 PM</p>
+        </div>
+      </div>
+
+      <form class="contact-form" onsubmit="sendEnquiry(event)">
+        <input id="name" type="text" placeholder="Your name" required />
+        <input id="phone" type="tel" placeholder="Phone number" required />
+        <select id="goal">
+          <option>Membership enquiry</option>
+          <option>Personal training</option>
+          <option>Workout guidance</option>
+          <option>General enquiry</option>
+        </select>
+        <button class="btn primary" type="submit">Send Enquiry</button>
+        <p id="form-msg" class="form-msg"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">XTREME FITNESS <span>PREMIUM</span></div>
+    <p>© 2026 Extreme Fitness Premium. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
